@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Random</title>
+</head>
+<body>
+    <script>
+        // this will generate a random number between 0 and 1000
+        let randomNumber = Math.floor(Math.random() * 1001);
+
+        // tgis will randomly generated number
+        document.write("Randomly generated number: " + randomNumber + "<br>");
+
+        // breaks down the random number into hundreds, tens, and ones digits
+        let h = Math.floor(randomNumber / 100);
+        let t= Math.floor((randomNumber % 100) / 10);
+        let o = randomNumber % 10;
+
+        // display the breakdown of the random number
+        document.write("Breakdown: " + h*100 + " " + t*10 + " " + o + "<br>");
+        
+        // display the date
+        let currentDate = new Date();
+        document.write("Date: " + currentDate);
+    </script>
+</body>
+</html>
